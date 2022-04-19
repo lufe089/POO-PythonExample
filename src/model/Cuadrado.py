@@ -7,7 +7,7 @@ class Cuadrado(FiguraGeometrica):
         FiguraGeometrica.__init__(self)
 
         self._lado = lado
-        self._nombreFigura = "Cuadrado"
+        self._nombre_figura = "Cuadrado"
 
     def averiguar_perimetro(self):
         # Si no se ha calculado previamente se calcula

@@ -7,7 +7,7 @@ class FiguraGeometrica(ABC):
         # Atributos  de instancia protegidos
         self._perimetro = 0
         self._area = 0
-        self._nombreFigura = " "
+        self._nombre_figura = " "
 
     @abstractmethod
     def averiguar_perimetro(self):
@@ -30,4 +30,4 @@ class FiguraGeometrica(ABC):
         return self._area
 
     def get_nombre_figura(self):
-        return self._nombreFigura
+        return self._nombre_figura

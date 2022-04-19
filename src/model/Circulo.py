@@ -7,7 +7,7 @@ class Circulo(FiguraGeometrica):
         FiguraGeometrica.__init__(self)
 
         self._radio = radio
-        self._nombreFigura = "Circulo"
+        self._nombre_figura = "Circulo"
         self._PI = 3.1416
 
     def averiguar_perimetro(self):
