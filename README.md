@@ -45,6 +45,6 @@ Para el código de este repositorio agregue:
   averiguar_perimetro de la clase Circulo.
 * Corra las pruebas unitarias y observe que la prueba debe fallar
 * Arregle el código nuevamente
-* Agrege las pruebas para evaluar los valores de retorno de los métodos: averiguar_area de la clase Circulo y Cuadrado
+* Agrege las pruebas para evaluar los valores de retorno de los métodos: averiguar_perimetro de la clase Circulo y Cuadrado
 *
     * Implemente las pruebas para verificar el método averiguar_area de las figuras geométricas que usted creó. 
