@@ -9,13 +9,13 @@ class FigurasTest(unittest.TestCase):
 
     def test_averiguar_perimetro_cuadrado(self):
         cuadrado = Cuadrado(10)
-        perimetro = cuadrado.averiguar_area()
-        self.assertEqual(perimetro, 100)  # add assertion here
+        area = cuadrado.averiguar_area()
+        self.assertEqual(area, 100)  # add assertion here
 
     def test_averiguar_perimetro_circulo(self):
         circulo = Circulo(2)
-        perimetro = circulo.averiguar_area()
-        self.assertEqual(perimetro, 12.5664)  # add assertion here
+        area = circulo.averiguar_area()
+        self.assertEqual(area, 12.5664)  # add assertion here
 
     def test_contar_figuras(self):
         ## El constructor actual inicia dos cuadrados y un circulo
