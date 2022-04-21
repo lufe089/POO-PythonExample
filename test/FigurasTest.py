@@ -7,15 +7,21 @@ from src.view.GUIConsola import GUIConsola
 
 class FigurasTest(unittest.TestCase):
 
-    def test_averiguar_perimetro_cuadrado(self):
+    def test_averiguar_area_cuadrado(self):
         cuadrado = Cuadrado(10)
         area = cuadrado.averiguar_area()
-        self.assertEqual(area, 100)  # add assertion here
+        self.assertEqual(100, area)  # add assertion here
 
-    def test_averiguar_perimetro_circulo(self):
+    def test_averiguar_area_cuadrado_valor_incorrecto(self):
+        cuadrado = Cuadrado(10)
+        area = cuadrado.averiguar_area()
+        # La prueba pasa pq si el area se calcula bien el resultado NO será 10
+        self.assertFalse(area == 10)  # add assertion here
+
+    def test_averiguar_area_circulo(self):
         circulo = Circulo(2)
         area = circulo.averiguar_area()
-        self.assertEqual(area, 12.5664)  # add assertion here
+        self.assertEqual(12.5664, area)  # add assertion here
 
     def test_contar_figuras(self):
         ## El constructor actual inicia dos cuadrados y un circulo
