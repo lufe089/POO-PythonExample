@@ -24,7 +24,7 @@ ese código para dar los ejemplos.
 
 ### Python - organización de código
 
-* ¿Qué son los namespaces en Python y para qué sirve?
+* Investigue qué son las cadenas ``f`` en python
 * ¿Para qué sirve el archivo __init__.py en python? De un ejemplo
 
 ## Complete

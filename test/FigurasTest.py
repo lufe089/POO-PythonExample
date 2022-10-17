@@ -2,7 +2,8 @@ import unittest
 
 from src.model.Circulo import Circulo
 from src.model.Cuadrado import Cuadrado
-from src.view.GUIConsola import GUIConsola
+from src.model.Programa import Programa
+
 
 
 class FigurasTest(unittest.TestCase):
@@ -25,10 +26,10 @@ class FigurasTest(unittest.TestCase):
 
     def test_contar_figuras(self):
         ## El constructor actual inicia dos cuadrados y un circulo
-        consola = GUIConsola()
+        programa = Programa()
 
         # Verificar que existan un cuadrado y un circulo
-        cantCirculos, cantCuadrados = consola.contar_figuras_tipo()
+        cantCirculos, cantCuadrados = programa.contar_figuras_tipo()
         self.assertTrue(cantCirculos == 1)
         self.assertTrue(cantCuadrados == 2)
 

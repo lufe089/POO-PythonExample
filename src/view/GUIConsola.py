@@ -1,42 +1,34 @@
-from src.model.Circulo import Circulo
-from src.model.Cuadrado import Cuadrado
+from src.model.Programa import Programa
 
 
 class GUIConsola:
 
     def __init__(self) -> None:
-        self.figuras = []
+        self.programaObj = Programa();
 
-        # Agrego un circulo y un cuadrado de pruebas
-        self.figuras.append(Circulo(10))
-        self.figuras.append(Cuadrado(100))
-        self.figuras.append(Cuadrado(20))
 
-    def mostrar_datos_figuras(self):
-        for figura in self.figuras:
-            print(f"El perimetro de la figura {figura.get_nombre_figura()} es  {figura.averiguar_perimetro()}")
-            print(f"El area de la figura {figura.get_nombre_figura()} es  {figura.averiguar_area()}")
 
-    def sumar_areas(self):
-        # TODO
-        print("Pendiente")
-
-    def contar_figuras_tipo(self):
-        contCirculos = 0
-        contCuadrados = 0
-        for figura in self.figuras:
-            if isinstance(figura, Circulo):
-                contCirculos += 1
-            elif isinstance(figura, Cuadrado):
-                contCuadrados += 1
-
-        return contCirculos, contCuadrados
+    def agregar_figura(self):
+        opcion = -1
+        print(" Figuras disponibles\n")
+        print("1. Cuadrado\n")
+        print("2. Círculo\n")
+        print("0.  Salir \n")
+        opcion = int(input(""))
+        if opcion == 1:
+            print("Ingrese la longitud de un lado del cuadrado \n")
+            lado = int(input(""))
+            self.programaObj.agregarFigura(lado = lado)
+        elif opcion == 2:
+            print("Ingrese el radio del círculo \n")
+            radio = float(input(""))
+            self.programaObj.agregarFigura(radio=radio)
 
     def dibujar_menu(self):
         opcion = -1
         while (opcion != 0):
             print(" Bienvenido\n")
-            print("1. Ver el perimetro y area de las figuras existentes\n")
+            print("1. Ver el perimetro de las figuras existentes\n")
             print("2. Suma total de todas las areas de las figuras registradas\n")
             print("3. Dibujar figuras existentes\n")
             print("0.  Salir \n")
@@ -44,6 +36,8 @@ class GUIConsola:
             opcion = int(input(""))
 
             if opcion == 1:
-                self.mostrar_datos_figuras()
+                self.programaObj.mostrar_perimetro_figura()
             elif opcion == 2:
+                self.programaObj.mostrar_area_figura()
+            elif opcion == 3:
                 print("Pendiente")
