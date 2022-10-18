@@ -33,12 +33,14 @@ class Programa():
 
     def contar_figuras_tipo(self):
         """Cuenta cuántas figuras hay de cada tipo"""
-        contCirculos = 0
-        contCuadrados = 0
+        cont_circulos = 0
+        cont_cuadrados = 0
         for figura in self.figuras:
             if isinstance(figura, Circulo):
-                contCirculos += 1
+                figura = Circulo(figura)  #Hago el casting
+                print("El radio es ",figura._radio)
+                cont_circulos += 1
             elif isinstance(figura, Cuadrado):
-                contCuadrados += 1
+                cont_cuadrados += 1
         #Python permite el retorno de más de un atributo
-        return contCirculos, contCuadrados
+        return cont_circulos, cont_cuadrados

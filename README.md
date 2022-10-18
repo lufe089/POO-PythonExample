@@ -28,7 +28,7 @@ Use este código para dar los ejemplos.
 * ¿Para qué sirve el archivo __init__.py en python? De un ejemplo
 
 ## Complete
-Para ejecutar ete código debe agregar una configuracion. Para ello de click derecho sobre el archivo main.py y seleccione run
+Para ejecutar este código debe agregar una configuracion. Para ello de click derecho sobre el archivo main.py y seleccione run
  
 ### Migración de código
 

@@ -37,7 +37,7 @@ class GUIConsola:
             opcion = int(input(""))
 
             if opcion == 1:
-                self.programaObj.mostrar_perimetro_figura()
+                self.programaObj.contar_figuras_tipo()
             elif opcion == 2:
                 self.programaObj.mostrar_area_figura()
             elif opcion == 3:
