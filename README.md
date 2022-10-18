@@ -9,8 +9,8 @@ Busque sobre _The Zen of Python_. ¿Qué son estos principios? ¿Cuál principio
 
 ### Python y programación orientada a objetos
 
-Busque en Internet sobre los siguientes conceptos, luego revise el código disponible en el repositorio y conteste. Use
-ese código para dar los ejemplos.
+Busque en Internet sobre los siguientes conceptos, luego revise el código disponible en el repositorio y conteste. Cree una presentación con las respuestas. 
+Use este código para dar los ejemplos.
 
 * ¿Cómo se define una clase en Python? De un ejemplo
 * ¿Como se definen los atributos de instancia en Python? De un ejemplo
@@ -19,7 +19,7 @@ ese código para dar los ejemplos.
 * ¿Cómo se definen los métodos de una clase en Python?¿Cuál es el parámetro que todo método debe recibir? De un ejemplo
 * ¿Como se expresa en Python que una clase hereda de otra clase? De un ejemplo
 * ¿Para qué sirve el método isinstance? De un ejemplo
-* ¿Cómo se representan en Python los atributos y los métodos que solo se usan internamente?
+* ¿Cómo se representan en Python los atributos y los métodos privados y los atributos protegidos?
 * ¿Cómo se representa una clase abstracta en Python? De un ejemplo
 
 ### Python - organización de código
@@ -29,13 +29,15 @@ ese código para dar los ejemplos.
 
 ## Complete
 Para ejecutar ete código debe agregar una configuracion. Para ello de click derecho sobre el archivo main.py y seleccione run
-
+ 
 ### Migración de código
 
 Para el código de este repositorio agregue:
 
 * Las clases para dos figuras geométricas más, agregue estas clases en el model
-* Implemente los métodos para dibujar figuras. Migre la versión que tiene en C++
+* Implemente los métodos para dibujar figuras. Migre la versión que tiene en C++ (Solo la version sin colores)
+* Complete los `TODO` pendientes
+* Este código tiene un problema cuando se agregan las figuras geométricas, identifique qué no esta funcionando bien y soluciónelo.
 
 ### Pruebas unitarias
 
@@ -46,5 +48,4 @@ Para el código de este repositorio agregue:
 * Corra las pruebas unitarias y observe que la prueba debe fallar
 * Arregle el código nuevamente
 * Agrege las pruebas para evaluar los valores de retorno de los métodos: averiguar_area de la clase Circulo y Cuadrado
-*
-    * Implemente las pruebas para verificar el método averiguar_area de las figuras geométricas que usted creó. 
+* Implemente las pruebas para verificar el método averiguar_area de las figuras geométricas que creó. 

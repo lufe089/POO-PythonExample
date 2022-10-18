@@ -11,14 +11,11 @@ class Cuadrado(FiguraGeometrica):
 
     def averiguar_perimetro(self):
         # Si no se ha calculado previamente se calcula
-        if self.get_perimetro() == 0:
-            perimetro = self._lado * 4
-            # Inicializa el perimetro
-            self.set_perimetro(perimetro)
-        return self.get_perimetro()
+        if self._perimetro  == 0:
+            self._perimetro = self._lado * 4  # Se actualiza el atributo protegido de la clase
+        return self._perimetro
 
     def averiguar_area(self):
-        if self.get_area() == 0:
-            area = pow(self._lado, 2)
-            self.set_area(area)
-        return self.get_area()
+        if self._area == 0:
+            self._area = pow(self._lado, 2)
+        return self._area

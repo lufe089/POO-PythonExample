@@ -17,16 +17,14 @@ class FiguraGeometrica(ABC):
     def averiguar_area(self):
         pass
 
-    def set_perimetro(self, valor):
-        self._perimetro = valor
-
-    def set_area(self, valor):
-        self._area = valor
-
     def get_perimetro(self):
+        if self.perimetro == 0:
+            # Si no ha calculado se calcula  primero
+            self.averiguar_perimetro()
         return self._perimetro
 
     def get_area(self):
+        #TODO: Hacer el mismo ajuste de perimetro para area
         return self._area
 
     def get_nombre_figura(self):

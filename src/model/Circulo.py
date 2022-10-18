@@ -11,9 +11,11 @@ class Circulo(FiguraGeometrica):
         self._PI = 3.1416
 
     def averiguar_perimetro(self):
-        perimetro = 2 * self._PI * self._radio
-        return perimetro
+        if self._perimetro == 0:
+            self._perimetro = 2 * self._PI * self._radio
+        return self._perimetro
 
     def averiguar_area(self):
-        area = (pow(self._radio, 2)) * self._PI
-        return area
+        if self._area == 0:
+            self._area = (pow(self._radio, 2)) * self._PI
+        return  self._area
