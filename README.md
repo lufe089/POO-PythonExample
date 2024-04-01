@@ -1,16 +1,16 @@
-# Python como lenguaje para programación orientada a objetos
+# Python como lenguaje para programación orientado a objetos
 
-## Investigue lo siguiente
+## Investigue y realice una presentación de 10 min con lo siguiente
 
 ### Familiariadad con Python
 
-Busque sobre _The Zen of Python_. ¿Qué son estos principios? ¿Cuál principio le gusta más? Instale en su PC python para
+Busque sobre _The Zen of Python_. ¿Qué son estos principios? ¿Cuáles son los 2 principios que más le gustan y porqué? Instale en su PC python para
 64 bits y Pycharm community como el entorno de trabajo
 
 ### Python y programación orientada a objetos
 
-Busque en Internet sobre los siguientes conceptos, luego revise el código disponible en el repositorio y conteste. Cree una presentación con las respuestas. 
-Use este código para dar los ejemplos.
+Consulte sobre los siguientes conceptos, luego revise el código disponible en el repositorio y conteste. Las respuestas deben hacer parte de su presentación. 
+puede usar el código del repo para dar los ejemplos.
 
 * ¿Cómo se define una clase en Python? De un ejemplo
 * ¿Como se definen los atributos de instancia en Python? De un ejemplo
@@ -24,6 +24,7 @@ Use este código para dar los ejemplos.
 
 ### Python - organización de código
 
+* El estándar en Python no es _camelCase_ averigua cuál es, su nombre y cómo se utiliza.
 * Investigue qué son las cadenas ``f`` en python
 * ¿Para qué sirve el archivo __init__.py en python? De un ejemplo
 
@@ -39,13 +40,8 @@ Para el código de este repositorio agregue:
 * Complete los `TODO` pendientes
 * Este código tiene un problema cuando se agregan las figuras geométricas, identifique qué no esta funcionando bien y soluciónelo.
 
-### Pruebas unitarias
+### TENGA EN CUENTA EN LA ENTREGA
 
-* Observe los tres métodos de pruebas unitarias ya implementados en la clase FigurasTest
-* Haga cambios en los valores de retorno y corra las pruebas. Observe que las pruebas deben fallar
-* Deje las pruebas como estaban inicialmente y haga cambios en el código fuente para dañar el comportamiento del método
-  averiguar_perimetro de la clase Circulo.
-* Corra las pruebas unitarias y observe que la prueba debe fallar
-* Arregle el código nuevamente
-* Agrege las pruebas para evaluar los valores de retorno de los métodos: averiguar_area de la clase Circulo y Cuadrado
-* Implemente las pruebas para verificar el método averiguar_area de las figuras geométricas que creó. 
+* Cree un directorio _Docs_ donde agregue la presentación que preparó con el contenido para la exposición
+* El trabajo puede ser individual o parejas
+* Al hacer push con el documento que tiene la presentación más los cambios en el código, no es necesario subir nada al BrightSpace
